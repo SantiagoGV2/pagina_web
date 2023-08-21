@@ -6,13 +6,16 @@
 
 header{
     background-color: #99C9DD;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+    
+    
 }
 h1{
     color: #F7E9D9;
     text-align: center;
     margin-bottom: 2%;
     font-family: italic;
+    margin-top: 0.1%;
     
 }
 h1:hover{
@@ -49,37 +52,27 @@ img{
     border-radius: 10px;
     margin-top: -150px;
     margin-bottom: 4%;
-    margin-left: 1%;
+    margin-left: 2%;
 }
 #titulo2{
     text-align: center;
     color: black;
+    margin: 0px 0px 50px 0px;
+    
 }
 .wave{
     position: absolute;
     bottom: 140px;
     width: 100%;
     height: 100px;
-    background-image: url(../img/wave.png);
+    background-image: url(../assets/img/wave.png);
     background-size: 1000 px 100px;
 }
 iframe{
-    width: 400px;
-    height:400px; 
-    margin-left: 250px;
-    
-    
+    width:100px; 
+    height:50px  
 }
-.seccion3{
-    border-color:black;
-    border-radius: 20px;
-    background-color: pink;
-    padding: 2%;
-    margin: 2%;
-    margin-left: 20%;
-    margin-right:20%;
 
-}
 #titulo3{
     text-align: center;
 }
@@ -88,23 +81,35 @@ iframe{
     position: relative;
     width: 100%;
     height: 57vh;
-    background-color: #EBC385;
+    background-image: url(../assets/img/paper-1468883_1920.jpg);
+    margin-bottom: 5%;
+    
 }
-.sec2{
+
+.sec2,.sec3,.sec4,.sec5,.sec6,.sec7{
     display: inline-block;
-    margin-left: 3%;
+    align-items: center;
+    margin-left: 11.5%;
+    border-color:black;
+    border-radius: 20px;
+    background-color: pink;
+    padding: 1%;
+    margin-bottom: 2%;
+
 }
 .container2{
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 30vh;
+    
 }
 
 .card{
     position: relative;
-    width: 300px;
-    height: 350px;
-    margin: 20px;
+    width: 250px;
+    height: 280px;
+    margin-top: 50px;
+    
 }
 .card .face{
     position: absolute;
@@ -118,6 +123,7 @@ iframe{
 .card .front{
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 10px #000;
+    
 }
 .card .front .imagen2{
     position: absolute;
@@ -135,32 +141,40 @@ iframe{
     color: #CA448D;
     background: rgb(0, 0, 0,.4);
     text-align: center;
+    
 }
 
 .card .back{
     transform: perspective(600px) rotateY(180deg);
     background-color: #99C9DD;
-    padding: 15px;
-    color: #CA448D;
+    padding: 5px;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     box-shadow: 0 5px 10px #000;
+    margin-top: auto;
+    margin-bottom: auto;
+    
 }
 .card .back .link{
     border-top:  solid 1px #f3f3f3;
     height: 50px;
     line-height: 50px;
+    margin-top: 5%;
 }
 .card .back .link a{
-    color: #EBC385;
+    color: beige;
 }
 
 .card .back h3{
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 2px;
+    color: black;
+    margin-bottom: 1%;
+    
 }
 
 .card .back p{
@@ -172,4 +186,11 @@ iframe{
 .card:hover .back{
     transform: perspective(600px) rotateY(360deg);
 
+}
+.redes{
+    text-align: center;
+}
+.fa-brands{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
