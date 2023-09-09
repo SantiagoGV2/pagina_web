@@ -3,14 +3,83 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-header{
-    background-color: #99C9DD;
-    margin-bottom: 3%;
-    
-    
+body{
+    position: relative;
+    top: 0;
+    font-family: 'Times New Roman', Times, serif, arial;
+    font-size: 14px;
+    background-color:#efdec2 ;
 }
-h1{
+.header{
+    background-color: #99C9DD;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 2px 4px #c8e4f0;
+    z-index: 1;
+}
+
+.header .container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 100;
+}
+.header .logo{
+    color: #99C9DD;
+    text-align: center;
+    padding: 0.5%;
+    flex-grow: 1;
+}
+
+.header .logo img{
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.header .menu{
+    text-align: center;
+    padding: 1%;
+    flex-grow: 8;
+    font-size: 20px;
+
+}
+.menu > nav{
+    background-color: chocolate;
+    border-radius: 10px;
+    padding: 3%;
+
+}
+.menu .items > li{
+    display: inline-block;
+    padding: 0% 2%;
+    font-size: 18px;
+    list-style: none;
+}
+.items > li a{
+    color: black;
+    text-decoration: none;
+}
+.items > li a:hover{
+    color: burlywood;
+    font-size: 19px;
+
+}
+
+/***MAIN***/
+
+.main h1{
+    width: 40%;
+    padding: 1%;
+    font-size: 55px;
+    font-weight: 500;
+    margin-top: 1%;
+}
+.titulo1{
     color: #F7E9D9;
     text-align: center;
     margin-bottom: 2%;
@@ -18,95 +87,122 @@ h1{
     margin-top: 0.1%;
     
 }
-h1:hover{
+.titulo1:hover{
     text-shadow: 0 0 5px #CA448D,0 0 10px #CA448D, 0 0 15px #F7E9D9, 0 0 20px #F7E9D9, 0 0 25px #F7E9D9, 0 0 30px #F7E9D9;
+}
+.main > .container_quienessomos{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0.1px;
+    background-image:linear-gradient(50deg, #c3bebec0 10%, #ffd1dc9a), url(../assets/img/helado.jpg);
 
 }
+/*Secciones*/
+.container_quienessomos .text_quienessomos{
+    width: 85%;
+    font-size: 24px;
+    padding: 1.5%;
+    text-align: justify;
 
-nav{
-    padding-top: 20px;
-    font-weight: bold;
-    background-color: #C77D26;
-    width: 80%;
-    border-radius: 12px;
-    margin-left: 15%;
-    padding-bottom: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+}
+.subtitle1{
+    color: #CA448D;
+    font-family: italic;
+}
+.subtitle1:hover{
+    text-shadow: 0 0 5px #CA448D,0 0 10px #CA448D, 0 0 15px #F7E9D9, 0 0 20px #F7E9D9, 0 0 25px #F7E9D9, 0 0 30px #F7E9D9;
+}
+.containers{
+    padding: 2%;
+    margin-top: 2%;
 }
 
-ul{
-    display: flex;
-    padding: 5px 30px;
-    font-size: 20px;
-    margin-right: 5%;
-}
-li{
-    display: inline-block;
+.up{
+    width: 8%;
+    margin: 2% 2% 2% ;
     padding: 1%;
-    
-    margin-right: 2%;
-    margin-left: 3%;
+    background-color: #c77d26;
+    border: 1px solid #c77d26;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    float: right;
+}
+.up:hover{
+    background-color: #583319;
+    font-weight: 500;
+}
 
+.container_qhacemos .text_quehacemos{
+    font-size: 24px;
+    text-align: justify;
 }
-a{
-    color: black;
-    text-decoration: none;
-}
-a:hover{
-    color: burlywood;
-}
-img{
-    width: 180px;
-    height: 180px;
-    border-radius: 10px;
-    margin-top: -150px;
-    margin-bottom: 4%;
-    margin-left: 2%;
-}
-#titulo2{
+.subtitle{
+    font-size: 30px;
+    color: #CA448D;
     text-align: center;
-    color: black;
-    margin: 0px 0px 50px 0px;
-    
+    margin-bottom: 2%;
+    font-family: italic;
+    margin-top: 0.1%;
+    margin-bottom: 1.5%;
+    padding: 12px;
+    margin-top: 4%;
+    border-bottom: 1px solid #c77d26;
 }
+.subtitle:hover{
+    text-shadow: 0 0 5px #CA448D,0 0 10px #CA448D, 0 0 15px #F7E9D9, 0 0 20px #F7E9D9, 0 0 25px #F7E9D9, 0 0 30px #F7E9D9;
+}
+
+.container_ubicaciones .text_ubicaciones{
+    font-size: 24px;
+    text-align: justify;
+}
+.container_ubicaciones .publicidad > img{
+    width: 25%;
+    height:auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 2%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.container_ubicaciones .publicidad > img:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 4px 5px #CA448D;
+}
+
 .wave{
     position: absolute;
     bottom: 145px;
     width: 100%;
     height: 100px;
-    background-image: url(../assets/img/wave.png);
     background-size: 1000 px 100px;
 }
-iframe{
-    width:100px; 
-    height:50px  
-}
 
-#titulo3{
-    text-align: center;
-}
 
-.container{
-    position: relative;
-    width: 100%;
-    height: 57vh;
-    background-image: url(../assets/img/paper-1468883_1920.jpg);
-    margin-bottom: 5%;
-    
-}
-
-.sec2,.sec3,.sec4,.sec5,.sec6,.sec7{
+.sec_cards{
     display: inline-block;
-    align-items: center;
-    margin-left: 11.5%;
-    border-color:black;
+    margin-left: 10%;
+    border-color:2px pink;
     border-radius: 20px;
-    background-color: pink;
-    padding: 1%;
+    padding: 2%;
     margin-bottom: 2%;
+    transition: all 0.8s ease 0.2;
+    cursor: pointer;
 
+}
+.sec_cards:hover{
+    border: 1px solid pink;
+    background-color: pink;
+    border-radius: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 3px 5px 3px #cc0774;
 }
 .container2{
     flex-wrap: wrap;
@@ -118,7 +214,7 @@ iframe{
 .card{
     position: relative;
     width: 250px;
-    height: 280px;
+    height: 300px;
     margin-top: 50px;
     
 }
@@ -204,4 +300,43 @@ iframe{
 .fa-brands{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 15px;
+}
+.footer{
+    width: 100%;
+    background-color: #583319;
+    color: white;
+    margin-top: 1%;
+    overflow-x: auto;
+} 
+.footer{
+    .container_footer{
+      padding-top: 2%;
+      text-align: center;
+      margin: 2%;
+    }
+}
+  .container_footer > h2{
+    color: white;
+}
+  .container_footer > li{
+    list-style: none;
+    text-align: center;
+  
+}
+.container_footer > p{
+    font-size: 18px;
+  
+}
+  
+.social_net > li{
+    display: inline-block;
+    padding: 1.5%;
+  
+}
+.social_net > li a{
+    color: white;
+    text-decoration: none;
+}
+.nets{
+  width: 40px;
 }
